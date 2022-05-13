@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.titulo{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+.img{
+    height: 400px;
+    width: 800px;
+    position: relative;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.transicao{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.transicao:active{ 
+    opacity: 1;
+}
+
+.fade{
+    content: "Olha uma montanha";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.fade:active{
+    position: absolute;
+    transform: rotate(360deg);   
+    opacity: 0.5;
+    transition-duration: 1s;
+}

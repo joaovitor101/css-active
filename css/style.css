@@ -49,6 +49,6 @@ body{
 .fade:active{
     position: absolute;
     transform: rotate(360deg);   
-    opacity: 0.5;
+    opacity: 0.1;
     transition-duration: 1s;
 }
